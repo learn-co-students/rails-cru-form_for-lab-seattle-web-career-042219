@@ -1,0 +1,5 @@
+<h1> <%=@artist.name%></h1>
+<p><%= @artist.bio%></p>
+<%= form_tag @artist, method: "delete" do %>
+  <%= submit_tag "Delete Artist" %>
+<% end %>
