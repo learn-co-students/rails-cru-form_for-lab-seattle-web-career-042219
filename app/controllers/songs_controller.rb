@@ -22,7 +22,7 @@ class SongsController < ApplicationController
   end
 
   def update
-    @song = Song.create(song_params)
+    song_params
     @song.update(song_params)
     redirect_to song_path(@song)
   end

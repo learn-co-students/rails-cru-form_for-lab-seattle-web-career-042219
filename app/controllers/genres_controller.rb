@@ -19,7 +19,7 @@ class GenresController < ApplicationController
   end
 
   def update
-    @genre = Genre.create(genre_params)
+    find_genre
     @genre.update(genre_params)
     redirect_to genre_path(@genre)
   end
