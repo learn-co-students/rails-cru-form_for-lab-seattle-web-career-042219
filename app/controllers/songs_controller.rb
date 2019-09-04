@@ -22,7 +22,7 @@ class SongsController < ApplicationController
   end
 
   def update
-    song_params
+    song_finder
     @song.update(song_params)
     redirect_to song_path(@song)
   end

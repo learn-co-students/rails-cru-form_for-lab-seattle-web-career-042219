@@ -14,7 +14,7 @@ class GenresController < ApplicationController
 
   def create
     @genre = Genre.new(genre_params)
-    @song.save
+    @genre.save
     redirect_to genre_path(@genre)
   end
 
